@@ -14,7 +14,7 @@ const FixitHeader = () => {
       <input
         className="header__search-bar"
         type="search"
-        placeholder="type your post code"
+        placeholder="Type your post code"
         id="search-id"
         name="search-box"
       />

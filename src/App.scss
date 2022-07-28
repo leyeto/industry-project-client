@@ -1,4 +1,4 @@
-@forward "./sass/partials";
+@use "./sass/partials/typography" as *;
 
 .app {
   background-color: #e5e5e5;
