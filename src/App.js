@@ -10,15 +10,17 @@ function App() {
   const [postcode, setPostcode] = useState("EC2A3QA"); // TODO: change to dynamic if have time
 
   return (
-    <div className="App">
+    <div className="app">
       <FixitHeader />
-      <Switch>
-        <Route path="/" exact component={HomePage} />
-        <Route
-          path="/fixers"
-          render={() => <FixersList postcode={postcode} />}
-        />
-      </Switch>
+      <main className="app__main">
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route
+            path="/fixers"
+            render={() => <FixersList postcode={postcode} />}
+          />
+        </Switch>
+      </main>
       <Footer />
     </div>
   );

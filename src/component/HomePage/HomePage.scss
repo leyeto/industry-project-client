@@ -1,13 +1,32 @@
-.slides {
-  display: flex;
-  //   column-gap: 11px;
-  padding: 0 22px;
-  background-color: grey;
+.home {
+  &__slides {
+    display: flex;
+    // padding: 0 22px;
+    background-color: #e5e5e5;
+  }
 
-  &__image {
+  &__slide-container {
+    width: 178px;
+    height: 178px;
+  }
+
+  &__slides-image {
+    // position: absolute;
     width: 178px;
     height: 178px;
     object-fit: cover;
     border-radius: 10px;
+  }
+
+  &__slides-text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: white;
+    bottom: 25px;
+  }
+
+  &__carbon-image {
+    width: 100%;
   }
 }
