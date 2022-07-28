@@ -1,0 +1,15 @@
+.fixer {
+  display: flex;
+  border: 1px solid grey;
+
+  &__image {
+    width: 64px;
+    height: 64px;
+    background-color: grey;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+}

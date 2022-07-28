@@ -1,34 +1,41 @@
-import React from "react";
-import axios from 'axios'
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import FixerItem from "../FixerItem/FixerItem";
 import "./FixersList.scss";
 
 const API_ROOT = process.env.REACT_APP_BACKEND_URL;
 
-export default function FixersList(props) {
-    // const [userPostcode, setUserPostcode] = useState(props.postcode)
+export default function FixersList({ postcode }) {
+  const [fixersList, setFixersList] = useState([]);
 
-    const getPostcodeData = async ((postcode) => {
-        try {
-            const {data} = await axios.get(`https://api.postcodes.io/postcodes/${postcode}`);
-            let { newData } = await axios.get(`${API_ROOT}/fixers/${data.result.latitude}/${data.result.longitude}`);
-            return newData;
-        } catch (error) {
-            console.log("Error: ", error);
-            
+  useEffect(() => {
+    try {
+      const getPostcodeData = async (postcode) => {
+        const { data } = await axios.get(
+          `https://api.postcodes.io/postcodes/${postcode}`
+        );
+        const response = await axios.get(
+          `${API_ROOT}/fixers/${data.result.latitude}/${data.result.longitude}`
+        );
+        if (response) {
+          const itemList = response.data.map((fixer) => {
+            return <FixerItem key={fixer.id} fixer={fixer} />;
+          });
+          setFixersList(itemList);
         }
-    });
+      };
+      getPostcodeData(postcode);
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
 
-const orderedList = getPostcodeData(props.postcode)
-  const fixersList = orderedList.map((fixer) => {
-    return <FixerItem key={fixer.id} fixer={fixer} />;
-  });
-
+  if (fixersList.length === 0) {
+    return <p>Loading...</p>;
+  }
   return (
     <section className="fixers-list">
-      <h2 className="fixers-list__title">NEXT VIDEOS</h2>
       <ul className="fixers-list__list">{fixersList}</ul>
     </section>
   );
 }
-
