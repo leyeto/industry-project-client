@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import "./App.scss";
 import FixitHeader from "./component/FixItHeader/FixitHeader";
 import FixersList from "./component/FixersList/FixersList";
+import Footer from "./component/Footer/Footer";
 
 function App() {
   const [postcode, setPostcode] = useState("EC2A3QA");
@@ -17,6 +18,7 @@ function App() {
           render={() => <FixersList postcode={postcode} />}
         />
       </Switch>
+      <Footer />
     </div>
   );
 }
