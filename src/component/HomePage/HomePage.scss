@@ -1,0 +1,13 @@
+.slides {
+  display: flex;
+  //   column-gap: 11px;
+  padding: 0 22px;
+  background-color: grey;
+
+  &__image {
+    width: 178px;
+    height: 178px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
