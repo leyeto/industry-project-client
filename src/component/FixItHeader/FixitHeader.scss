@@ -1,0 +1,12 @@
+@use "../../sass/partials/colors" as *;
+
+.header {
+  background-color: $fixIt-header-purple;
+  &__search-bar {
+    background-image: url("../../assets/icons/search.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    padding: 0.4rem 1rem;
+  }
+}
