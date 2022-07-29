@@ -1,0 +1,26 @@
+.profile {
+  &__avatar-container {
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+  }
+
+  &__avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    object-fit: cover;
+    background-color: grey;
+  }
+
+  &__cta {
+    background: white;
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+  }
+
+  &__product {
+    width: 100%;
+  }
+}
