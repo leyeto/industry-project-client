@@ -25,24 +25,9 @@
     margin-bottom: 24px;
   }
 
-  &__bottom {
-    display: flex;
-    padding: 0 5px;
-  }
-
   &__submit-form {
     flex-grow: 1;
     margin-right: 16px;
-  }
-
-  &__search-bar {
-    width: 100%;
-    // flex-grow: 1;
-    background-image: url("../../assets/icons/search.svg");
-    background-position: left;
-    background-repeat: no-repeat;
-    border-radius: 2rem;
-    padding: 0.4rem 1rem;
   }
 
   &__filter {
