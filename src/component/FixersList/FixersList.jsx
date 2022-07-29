@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import FixerItem from "../FixerItem/FixerItem";
 import "./FixersList.scss";
+import SearchBar from "../SearchBar/SearchBar";
 
 const API_ROOT = process.env.REACT_APP_BACKEND_URL;
 
@@ -34,14 +35,17 @@ export default function FixersList({ postcode }) {
     return <p>Loading...</p>;
   }
   return (
-    <section className="fixers-list">
-      <label htmlfor="sort">Sort results:</label>
-      <select id="sort" name="sort">
-        <option value="byDistance">by Distance</option>
-        <option value="byPrice">by Price</option>
-        <option value="byRating">by Rating</option>
-      </select>
-      <ul className="fixers-list__list">{fixersList}</ul>
-    </section>
+    <>
+      <SearchBar />
+      <section className="fixers-list">
+        <label htmlFor="sort">Sort results:</label>
+        <select className="fixers-list__sort" id="sort" name="sort">
+          <option value="byDistance">by Distance</option>
+          <option value="byPrice">by Price</option>
+          <option value="byRating">by Rating</option>
+        </select>
+        <ul className="fixers-list__list">{fixersList}</ul>
+      </section>
+    </>
   );
 }
