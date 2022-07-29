@@ -1,10 +1,12 @@
 @use "../../sass/partials/colors" as *;
 
 .footer {
-  background-color: $fixIt-header-purple;
+  background-color: #a3b0dd;
   display: flex;
   justify-content: space-evenly;
-  position: relative;
+  position: sticky;
   padding: 2rem;
-  top: 10vh;
+  margin-top: 4rem;
+  bottom: 0;
+  // opacity: 100%;
 }
