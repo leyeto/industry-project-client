@@ -1,14 +1,12 @@
 import React, { useState } from "react";
-import { NavLink, useHistory } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import brandLogoText from "../../assets/icons/Fixit.svg";
 import brandLogoImage from "../../assets/icons/Vector.svg";
-import filter from "../../assets/icons/filter-icon.svg";
+
 import "./FixitHeader.scss";
 
 const FixitHeader = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
-
-  const history = useHistory();
 
   return (
     <>
@@ -28,36 +26,6 @@ const FixitHeader = () => {
           </NavLink>
         </div>
         <h1 className="header__purpose">What do you need to fix today?</h1>
-        <div className="header__bottom">
-          <form
-            className="header__submit-form"
-            action="submit"
-            onSubmit={(e) => {
-              e.preventDefault();
-              history.push("/fixers");
-            }}
-          >
-            <input
-              className="header__search-bar"
-              type="text"
-              placeholder="Type your postcode"
-              id="search-id"
-              name="search-box"
-            />
-          </form>
-          <img
-            className="header__filter"
-            src={filter}
-            alt="Filter icon"
-            onClick={() => {
-              if (isFilterOpen) {
-                setIsFilterOpen(false);
-              } else {
-                setIsFilterOpen(true);
-              }
-            }}
-          />
-        </div>
       </div>
       <div
         className={`filter-dropdown filter-dropdown${

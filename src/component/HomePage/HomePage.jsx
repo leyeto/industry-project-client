@@ -17,10 +17,12 @@ import drawer1 from "../../assets/images/drawer1.jpg";
 import stools from "../../assets/images/stools.jpg";
 import ceilingLamps from "../../assets/images/ceiling-lamps.jpg";
 import trousers from "../../assets/images/trousers.jpg";
+import SearchBar from "../SearchBar/SearchBar";
 
 export default function HomePage() {
   return (
     <>
+      <SearchBar />
       <h2 className="home__title">Services Available:</h2>
       <Swiper
         slidesPerView={2}
