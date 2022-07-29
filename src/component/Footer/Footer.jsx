@@ -6,11 +6,19 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__search-icon">
-        <img src={searchWrench} alt="search-icon-wrench" />
-        <h4>Setting</h4>
+        <img
+          className="footer__search-icon-icon"
+          src={searchWrench}
+          alt="search-icon-wrench"
+        />
+        <h4>settings</h4>
       </div>
       <div className="footer__profile-icon">
-        <img src={profileIcon} alt="search-icon-wrench" />
+        <img
+          className="footer__search-icon-icon"
+          src={profileIcon}
+          alt="search-icon-wrench"
+        />
         <h4>profile</h4>
       </div>
     </div>
