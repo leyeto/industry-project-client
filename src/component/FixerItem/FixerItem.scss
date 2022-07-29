@@ -5,7 +5,15 @@
   &__image {
     width: 64px;
     height: 64px;
-    background-color: grey;
+    // background-color: grey;
+
+    &--hide {
+      display: none;
+    }
+
+    &--show {
+      display: inline-block;
+    }
   }
 
   &__text {
