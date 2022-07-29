@@ -1,3 +1,5 @@
+@use "../../sass/partials/colors" as *;
+
 .profile {
   &__header {
     margin-top: 20px;
@@ -26,9 +28,15 @@
     margin-top: 20px;
   }
 
-  &__name,
+  &__name {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+
   &__bio {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
+    line-height: 21px;
   }
 
   &__cta {
@@ -37,6 +45,7 @@
     width: 100%;
     padding: 10px;
     text-align: center;
+    margin-top: 10px;
     margin-bottom: 20px;
   }
 
@@ -47,8 +56,11 @@
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25),
       inset 0px 2px 2px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(30px);
-
     border-radius: 14px;
+
+    &:active {
+      background-color: $fixIt-header-purple;
+    }
   }
 
   &__product-image {
@@ -97,5 +109,49 @@
   &__content--bottom {
     position: relative;
     bottom: 90px;
+  }
+
+  &__chat {
+    width: 100%;
+    z-index: 10;
+  }
+
+  &__chat-window {
+    width: calc(100% - 44px);
+    margin-top: 20px;
+    border-radius: 20px;
+    z-index: 10;
+  }
+
+  &__chat-close {
+    font-weight: 700;
+    font-size: 18px;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    z-index: 10;
+    border: 2px solid black;
+    bottom: 87px;
+    left: 30px;
+
+    &:active {
+      background-color: #a3b0dd;
+    }
+  }
+
+  &__chat--show {
+    position: absolute;
+  }
+
+  &__chat-window--show,
+  &__chat-close--show {
+    position: relative;
+    display: inline-block;
+  }
+  &__chat--hide,
+  &__chat-window--hide,
+  &__chat-close--hide {
+    display: none;
   }
 }

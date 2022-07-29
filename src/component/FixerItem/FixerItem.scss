@@ -1,3 +1,5 @@
+@use "../../sass/partials/colors" as *;
+
 a {
   text-decoration: none;
   color: inherit;
@@ -10,6 +12,10 @@ a {
   backdrop-filter: blur(96px);
   border-radius: 9px;
   padding: 16px;
+
+  &:active {
+    background-color: $fixIt-header-purple;
+  }
 
   &__profile {
     display: flex;

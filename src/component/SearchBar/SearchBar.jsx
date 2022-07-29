@@ -1,6 +1,6 @@
 import filter from "../../assets/icons/filter-icon.svg";
 import { useHistory } from "react-router-dom";
-import { useState } from "react";
+import React, { useState } from "react";
 import "./SearchBar.scss";
 import searchIcon from "../../assets/icons/search.svg";
 

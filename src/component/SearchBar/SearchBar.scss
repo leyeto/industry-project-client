@@ -97,12 +97,13 @@
 
   input[type="radio"]:checked + label,
   .Checked + label {
-    background: darkcyan;
+    background: $fixIt-header-purple;
+    border: 2px solid black;
   }
 
   label {
     text-align: center;
-    padding: 13px 5px;
+    padding: 11px 5px;
     border-radius: 21px;
     background: white;
     border: 1px solid #ccc;
