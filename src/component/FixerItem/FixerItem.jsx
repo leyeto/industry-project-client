@@ -11,7 +11,6 @@ import ReactRating from "react-rating"; //If const doesn't work IMPORT will, did
 
 export default function FixerItem({ fixer }) {
   const distance = Math.round(fixer.distance * 100) / 100;
-  console.log(fixer);
 
   return (
     <li className="fixer">
