@@ -2,6 +2,7 @@ import filter from "../../assets/icons/filter-icon.svg";
 import { useHistory } from "react-router-dom";
 import { useState } from "react";
 import "./SearchBar.scss";
+import searchIcon from "../../assets/icons/search.svg";
 
 const SearchBar = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
@@ -18,6 +19,7 @@ const SearchBar = () => {
             history.push("/fixers");
           }}
         >
+          <img src={searchIcon} alt="search" className="main__search-icon" />
           <input
             className="main__search-bar"
             type="text"
