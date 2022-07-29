@@ -1,0 +1,22 @@
+.fixers-list {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    padding: 20px 0;
+  }
+
+  &__sort {
+    font: inherit;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25),
+      inset 0px 2px 2px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(96px);
+    border-radius: 9px;
+    padding: 2px;
+  }
+
+  label {
+    padding-right: 5px;
+  }
+}

@@ -1,0 +1,11 @@
+@use "./sass/partials/resets" as *;
+@use "./sass/partials/typography" as *;
+
+.app {
+  background-color: #e5e5e5;
+  max-width: 60rem;
+
+  &__main {
+    margin: 0 22px;
+  }
+}

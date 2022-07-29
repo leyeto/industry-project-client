@@ -1,0 +1,90 @@
+// // Import partials
+
+// @use "../abstracts/mixins" as *;
+// @use "../abstracts/variables" as *;
+
+// Text styling
+
+@font-face {
+  font-family: "Nunito";
+  src: url(../../assets/fonts/Nunito-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(../../assets/fonts/Nunito-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(../../assets/fonts/Nunito-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(../../assets/fonts/Nunito-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(../../assets/fonts/Nunito-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(../../assets/fonts/Nunito-ExtraBold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(../../assets/fonts/Nunito-Black.ttf);
+  font-weight: 900;
+}
+
+$font-stack: "Nunito", Verdana, sans-serif;
+
+body {
+  font-family: $font-stack;
+}
+
+// h1 {
+//   @include font-sizing(2.4rem, 3.2rem, 600);
+
+//   @include med-lrg() {
+//     @include font-sizing(3.3rem, 4.4rem, 600);
+//   }
+// }
+
+// h2 {
+//   @include font-sizing(1.2rem, $h2-line-height, 600);
+//   color: $Silver;
+// }
+
+// h3 {
+//   @include font-sizing(1.3rem, 1.8rem, 600);
+
+//   @include med-lrg() {
+//     @include font-sizing(1.4rem, 2.2rem, 600);
+//   }
+// }
+
+// p,
+// input,
+// textarea {
+//   font-family: $font-stack;
+//   @include font-sizing(1.3rem, 1.8rem, 400);
+
+//   @include med-lrg() {
+//     @include font-sizing(1.4rem, 2.2rem, 400);
+//   }
+// }
+
+// button {
+//   font-family: $font-stack;
+//   @include font-sizing(1.2rem, 2rem, 600);
+// }
+
+// label {
+//   @extend button;
+//   color: $Silver;
+// }
