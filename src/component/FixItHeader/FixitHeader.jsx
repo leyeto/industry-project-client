@@ -27,9 +27,10 @@ const FixitHeader = () => {
             />
           </NavLink>
         </div>
-        <h1 className="header__purpose">What do you need</h1>
+        <h1 className="header__purpose">What do you need to fix today?</h1>
         <div className="header__bottom">
           <form
+            className="header__submit-form"
             action="submit"
             onSubmit={(e) => {
               e.preventDefault();
