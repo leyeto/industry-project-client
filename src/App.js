@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import FixitHeader from "./component/FixItHeader/FixitHeader";
 import HomePage from "./component/HomePage/HomePage";
