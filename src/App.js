@@ -9,6 +9,12 @@ import Footer from "./component/Footer/Footer";
 function App() {
   const [postcode, setPostcode] = useState("EC2A3QA"); // TODO: change to dynamic if have time
 
+  const SVGIcon = (props) => (
+    <svg className={props.className} pointerEvents="none">
+      <use xlinkHref={props.href} />
+    </svg>
+  );
+
   return (
     <div className="app">
       <FixitHeader />
