@@ -58,8 +58,10 @@ export default function HomePage() {
       </Swiper>
       <h2 className="home__title">Carbon Footprint</h2>
       <img src={trousers} alt="trousers" className="home__carbon-image" />
-      <p className="home__slides-text">
-        You saved 33kg of carbon dioxide by repairing your pair of jeans!
+      <p className="home__slides-text"></p>
+      <p>
+        Did you know production of one pair of jeans creates 33.4kg of CO2
+        (equivalent to driving 69 miles)? Save your old jeans <u>here</u>
       </p>
     </>
   );

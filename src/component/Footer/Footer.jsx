@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer__search-icon">
         <img src={searchWrench} alt="search-icon-wrench" />
-        <h4>Search</h4>
+        <h4>Setting</h4>
       </div>
       <div className="footer__profile-icon">
         <img src={profileIcon} alt="search-icon-wrench" />
