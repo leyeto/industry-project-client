@@ -11,11 +11,10 @@ import ReactRating from "react-rating"; //If const doesn't work IMPORT will, did
 
 export default function FixerItem({ fixer }) {
   const distance = Math.round(fixer.distance * 100) / 100;
-  console.log(fixer);
 
   return (
     <li className="fixer">
-      <Link to={`/fixers/1`}>
+      <Link className="fixer__profile" to={`/fixers/1`}>
         <div className="fixer__image-container">
           <img
             className={`fixer__image ${

@@ -1,6 +1,7 @@
 @use "../../sass/partials/colors" as *;
 
 .header {
+  height: 160px;
   background-color: $fixIt-header-purple;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25),
     inset 0px 2px 2px rgba(0, 0, 0, 0.25);
@@ -23,98 +24,11 @@
 
   &__purpose {
     margin-bottom: 24px;
+    font-size: 24px;
   }
 
-  &__submit-form {
-    flex-grow: 1;
-    margin-right: 16px;
-  }
-
-  &__filter {
-    cursor: pointer;
-  }
+  // &__submit-form {
+  //   flex-grow: 1;
+  //   margin-right: 16px;
+  // }
 }
-
-// All filter styling
-
-.filter-dropdown {
-  // height: 100px;
-  width: calc(100vw - 44px);
-  margin: 15px 22px;
-  z-index: 10;
-  background: rgba(10, 79, 92, 0.22);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25),
-    inset 0px 2px 2px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(96px);
-  border-radius: 9px;
-  padding: 12px;
-
-  &--show {
-    // display: inline-block;
-    position: absolute;
-  }
-
-  &--hide {
-    display: none;
-  }
-
-  &__title {
-    margin-bottom: 20px;
-  }
-}
-
-.prices,
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 10px;
-  margin-bottom: 16px;
-
-  li {
-    float: left;
-    margin: 0 5px 0 0;
-    width: 93px;
-    height: 44px;
-    position: relative;
-  }
-
-  label,
-  input {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-  input[type="radio"] {
-    opacity: 0.01;
-    z-index: 100;
-  }
-
-  input[type="radio"]:checked + label,
-  .Checked + label {
-    background: darkcyan;
-  }
-
-  label {
-    text-align: center;
-    padding: 13px 5px;
-    border-radius: 21px;
-    background: white;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    z-index: 90;
-
-    &:hover {
-      background: #ddd;
-    }
-  }
-}
-
-// .products {
-//   li {
-//     width: fit-content;
-//   }
-// }

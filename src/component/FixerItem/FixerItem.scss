@@ -4,13 +4,16 @@ a {
 }
 
 .fixer {
-  display: flex;
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25),
     inset 0px 2px 2px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(96px);
   border-radius: 9px;
-  padding: 10px;
+  padding: 16px;
+
+  &__profile {
+    display: flex;
+  }
 
   &__image-container {
     width: 64px;
@@ -24,6 +27,8 @@ a {
     border-radius: 50px;
     object-fit: cover;
     background-color: grey;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25),
+      inset 0px 2px 2px rgba(0, 0, 0, 0.25);
 
     &--hide {
       display: none;
@@ -37,6 +42,21 @@ a {
   &__text {
     display: flex;
     flex-direction: column;
+  }
+
+  &__name {
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  &__distance {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  &__description {
+    margin-bottom: 5px;
+    line-height: 21px;
   }
 
   &__rating {
