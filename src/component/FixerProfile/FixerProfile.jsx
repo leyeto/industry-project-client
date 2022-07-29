@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import image1 from "../../assets/images/profile-image.jpg";
 import drawer2 from "../../assets/images/drawer2.jpg";
 import ceilingLamps from "../../assets/images/ceiling-lamps.jpg";
+import chat from "../../assets/images/web-chat.jpeg";
 import backArrow from "../../assets/icons/back-arrow.svg";
 import fullStar from "../../assets/icons/full-star.svg";
 import "./FixerProfile.scss";
@@ -19,8 +20,34 @@ const fixer = {
 };
 
 export default function FixerProfile() {
+  const [isCtaOpen, setIsCtaOpen] = useState(false);
+
   return (
     <>
+      <div
+        className={`profile__chat profile__chat${
+          isCtaOpen ? "--show" : "--hide"
+        }`}
+      >
+        <img
+          className={`profile__chat-window profile__chat-window${
+            isCtaOpen ? "--show" : "--hide"
+          }`}
+          src={chat}
+          alt="placeholder chat window"
+        />
+        <p
+          className={`profile__chat-close profile__chat-close${
+            isCtaOpen ? "--show" : "--hide"
+          }`}
+          onClick={() => {
+            setIsCtaOpen(false);
+          }}
+        >
+          Close chat
+        </p>
+      </div>
+
       <div className="profile__header">
         <Link to="/fixers">
           <img src={backArrow} alt="back" />
@@ -44,7 +71,16 @@ export default function FixerProfile() {
             </div>
           </div>
         </div>
-        <div className="profile__cta">
+        <div
+          className="profile__cta"
+          onClick={() => {
+            if (isCtaOpen) {
+              setIsCtaOpen(false);
+            } else {
+              setIsCtaOpen(true);
+            }
+          }}
+        >
           <p className="profile__cta-text">I want your service!</p>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -23,7 +23,7 @@ export default function HomePage() {
   return (
     <>
       <SearchBar />
-      <h2 className="home__title">Services Available:</h2>
+      <h2 className="home__title">Services Available</h2>
       <Swiper
         slidesPerView={2}
         spaceBetween={45}
