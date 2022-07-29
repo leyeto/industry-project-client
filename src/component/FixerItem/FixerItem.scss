@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .fixer {
   display: flex;
   background: rgba(255, 255, 255, 0.8);
@@ -32,5 +37,9 @@
   &__text {
     display: flex;
     flex-direction: column;
+  }
+
+  &__rating {
+    display: flex;
   }
 }
