@@ -23,7 +23,7 @@ export default function HomePage() {
     <>
       <h2 className="home__title">Services Available:</h2>
       <Swiper
-        slidesPerView={"auto"}
+        slidesPerView={2}
         spaceBetween={45}
         // pagination={{
         //   clickable: true,
