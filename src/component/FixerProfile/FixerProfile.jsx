@@ -51,18 +51,18 @@ export default function FixerProfile() {
       <div className="profile__content">
         <div className="profile__product">
           <img src={drawer2} alt="drawers" className="profile__product-image" />
-          <img src="" alt="" className="profile__product-price" />
+          <div className="profile__product-price">£80</div>
           <p className="profile__product-text">
             Century Curved Chestnut Bedside Table
           </p>
         </div>
-        <div className="profile__content">
+        <div className="profile__content profile__content--bottom">
           <img
             src={ceilingLamps}
             alt="ceiling lamps"
             className="profile__product-image"
           />
-          <img src="" alt="" className="profile__product-price" />
+          <div className="profile__product-price">£40</div>
           <p className="profile__product-text">Upcycled bottle lightbulbs</p>
         </div>
       </div>

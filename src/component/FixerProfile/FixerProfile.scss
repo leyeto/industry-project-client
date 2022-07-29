@@ -67,4 +67,35 @@
     backdrop-filter: blur(96px);
     object-fit: cover;
   }
+
+  &__product-price {
+    position: relative;
+    margin-left: calc(100vw - 130px);
+    bottom: 160px;
+    // right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: #e4e8ed;
+    border: 5px solid #000000;
+    border-radius: 50px;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 900;
+  }
+
+  &__product-text {
+    color: white;
+    position: relative;
+    bottom: 120px;
+    text-align: center;
+    background-color: black;
+    margin: 0 10px;
+    padding: 3px;
+    font-weight: 900;
+  }
+
+  &__content--bottom {
+    position: relative;
+    bottom: 90px;
+  }
 }
