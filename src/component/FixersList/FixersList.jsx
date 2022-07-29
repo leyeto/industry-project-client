@@ -35,7 +35,7 @@ export default function FixersList({ postcode }) {
   }
   return (
     <section className="fixers-list">
-      <label for="sort">Sort results:</label>
+      <label htmlfor="sort">Sort results:</label>
       <select id="sort" name="sort">
         <option value="byDistance">by Distance</option>
         <option value="byPrice">by Price</option>

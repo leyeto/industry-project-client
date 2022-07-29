@@ -11,6 +11,7 @@ const ReactRating = require("react-rating"); //If const doesn't work IMPORT will
 
 export default function FixerItem({ fixer }) {
   const distance = Math.round(fixer.distance * 100) / 100;
+  console.log(fixer);
 
   return (
     <li className="fixer">
@@ -46,13 +47,13 @@ export default function FixerItem({ fixer }) {
               fullSymbol={<img src={fullStar} className="icon" />}
             />
           </div> */}
-          <div className="fixer__rating">
+          {/* <div className="fixer__rating">
             <img src={fullStar} alt="star" className="fixer__rating-star" />
             <img src={fullStar} alt="star" className="fixer__rating-star" />
             <img src={fullStar} alt="star" className="fixer__rating-star" />
             <img src={fullStar} alt="star" className="fixer__rating-star" />
             <img src={fullStar} alt="star" className="fixer__rating-star" />
-          </div>
+          </div> */}
         </div>
       </Link>
     </li>
