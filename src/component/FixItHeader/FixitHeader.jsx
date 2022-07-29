@@ -109,27 +109,27 @@ const FixitHeader = () => {
         </ul>
         <h3 className="filter-dropdown__title">Type of Product:</h3>
         <ul className="products">
-          <li>
+          <li className="filter-dropdown__1">
             <input type="radio" id="bedroom-furniture" name="product" />
             <label htmlFor="bedroom-furniture">Bedroom Furniture</label>
           </li>
-          <li>
+          <li className="filter-dropdown__2">
             <input type="radio" id="clothing" name="product" />
             <label htmlFor="clothing">Clothing</label>
           </li>
-          <li>
+          <li className="filter-dropdown__3">
             <input type="radio" id="office-furniture" name="product" />
             <label htmlFor="office-furniture">Office Furniture</label>
           </li>
-          <li>
+          <li className="filter-dropdown__4">
             <input type="radio" id="kitchen" name="product" />
             <label htmlFor="kitchen">Kitchen</label>
           </li>
-          <li>
+          <li className="filter-dropdown__5">
             <input type="radio" id="living-room" name="product" />
             <label htmlFor="living-room">Living Room</label>
           </li>
-          <li>
+          <li className="filter-dropdown__6">
             <input type="radio" id="upcycle" name="product" />
             <label htmlFor="upcycle">Upcycle</label>
           </li>

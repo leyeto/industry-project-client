@@ -53,11 +53,11 @@
 // All filter styling
 
 .filter-dropdown {
-  // height: 100px;
+  font-size: 20px;
   width: calc(100vw - 44px);
   margin: 15px 22px;
   z-index: 10;
-  background: rgba(10, 79, 92, 0.22);
+  background: $fixIt-header-purple;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25),
     inset 0px 2px 2px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(96px);
@@ -78,6 +78,10 @@
   }
 }
 
+.prices li {
+  width: 93px;
+}
+
 .prices,
 .products {
   display: flex;
@@ -88,7 +92,6 @@
   li {
     float: left;
     margin: 0 5px 0 0;
-    width: 93px;
     height: 44px;
     position: relative;
   }
@@ -128,8 +131,23 @@
   }
 }
 
-// .products {
-//   li {
-//     width: fit-content;
-//   }
-// }
+.filter-dropdown {
+  &__1 {
+    width: 200px;
+  }
+  &__2 {
+    width: 110px;
+  }
+  &__3 {
+    width: 165px;
+  }
+  &__4 {
+    width: 100px;
+  }
+  &__5 {
+    width: 140px;
+  }
+  &__6 {
+    width: 100px;
+  }
+}
