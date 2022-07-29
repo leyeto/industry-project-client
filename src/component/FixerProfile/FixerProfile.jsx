@@ -85,6 +85,7 @@ export default function FixerProfile() {
         </div>
       </div>
       <div className="profile__content">
+        <h2 className="profile__header">Previous products</h2>
         <div className="profile__product">
           <img src={drawer2} alt="drawers" className="profile__product-image" />
           <div className="profile__product-price">£80</div>

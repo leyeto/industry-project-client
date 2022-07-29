@@ -97,8 +97,9 @@
 
   input[type="radio"]:checked + label,
   .Checked + label {
-    background: $fixIt-header-purple;
+    background: #032340;
     border: 2px solid black;
+    color: white;
   }
 
   label {

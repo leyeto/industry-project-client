@@ -46,7 +46,7 @@ const SearchBar = () => {
           isFilterOpen ? "--show" : "--hide"
         }`}
       >
-        <h3 className="filter-dropdown__title">Price Range:</h3>
+        <h3 className="filter-dropdown__title">Price Range (£):</h3>
         <ul className="prices">
           <li>
             <input type="radio" id="10-20" name="price" />
