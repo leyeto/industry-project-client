@@ -56,6 +56,7 @@ export default function HomePage() {
       </Swiper>
       <h2 className="home__title">Carbon Footprint</h2>
       <img src={trousers} alt="trousers" className="home__carbon-image" />
+      <p>You saved 33kg of carbon dioxide by repairing your pair of jeans!</p>
     </>
   );
 }
